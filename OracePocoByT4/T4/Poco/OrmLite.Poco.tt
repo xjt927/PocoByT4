@@ -1,0 +1,147 @@
+<#@ include file="..\OrmLite.Core.ttinclude" #> 
+<#
+	// Settings
+	//使用配置文件配置连接串
+	//ConnectionStringName = "dbConnection";			// Uses last connection string in config if not specified
+
+	//oracle数据库 
+	 ConnectionStringResult="User ID=mes_ep_dev;Password=mes_ep_dev;Data Source=219VOC";
+	 ProviderNameResult="Oracle.DataAccess.Client"; 
+
+	//SQLite数据库
+	//ConnectionStringResult=@"Data Source=E:\软件\数据库\SqLite\sqlite\MyDatabase.sqlite;Pooling=true;FailIfMissing=false";
+	//ProviderNameResult="System.Data.SQLite"; 
+
+	 //ConnectionStringResult="Data Source=ORCL;Persist Security Info=True;User ID=scott;Password=sa123";
+	 //ProviderNameResult="Oracle.DataAccess.Client"; 
+
+	//sqlserver 数据库
+	//ConnectionStringResult="data source=.;initial catalog=NFineBase;user id=sa;password=sa123;pooling=True;connect timeout=0;MultipleActiveResultSets=True;";
+	//ProviderNameResult="System.Data.SqlClient"; 
+	
+
+	Namespace = "EP.Poco.EpRa";				//生成类的命名空间
+	ClassPrefix = "";						//给类名添加前缀
+	ClassSuffix = "";						//给类名添加后缀
+	bool SplitIntoMultipleFiles = true;		// if true: Generates one file for every class								--是否每个类创建一个.cs文件
+	bool MakeSingular = false;				// if true: Changes the classname to singular if tablename is not singular  --如果类名不是单数，则改变类名为单数
+	bool UseIdAsPK = true;					// if true: Changes the primary key property name to Id						--是否修改主键名为id
+	bool GenerateConstructor = false;		// if true: Generates the default empty constructor							--是否生成构造函数
+	bool UseSchemaAttribute = false;		// if true: Adds explicit '[Schema]' attribute								--是否添加[Schema]属性
+	 
+    // Read schema 
+	var tables = LoadTables(MakeSingular);
+	tables.ToString();
+
+/*
+	// Tweak Schema
+	tables["tablename"].Ignore = true;							// To ignore a table
+	tables["tablename"].ClassName = "newname";					// To change the class name of a table
+	tables["tablename"]["columnname"].Ignore = true;			// To ignore a column
+	tables["tablename"]["columnname"].PropertyName="newname";	// To change the property name of a column
+	tables["tablename"]["columnname"].PropertyType="bool";		// To change the property type of a column
+*/
+
+	// Generate output
+	if (tables.Count>0)
+	{
+#>
+<#
+if (string.IsNullOrEmpty(Namespace)) Namespace=ConnectionStringName;
+if (string.IsNullOrEmpty(Namespace)) Namespace="OrmLitePoco";
+var manager = Manager.Create(Host, GenerationEnvironment);
+manager.StartHeader(); #>using System;
+using NHibernate.Mapping.Attributes;
+using EP.Poco.Common;
+
+namespace <#=Namespace #>
+{
+<#manager.EndBlock(); #>
+<#
+System.Diagnostics.Debugger.Launch();
+foreach(Table tbl in from t in tables where !t.Ignore select t)
+{
+manager.StartNewFile(tbl.Name + ".cs");
+#>
+<# if (MakeSingular) {#>
+	[Alias("<#=tbl.Name#>")]
+<#}#>
+<# if (UseSchemaAttribute && !string.IsNullOrEmpty(tbl.Schema) && tbl.Schema != "dbo") {#>
+	[Schema("<#=tbl.Schema#>")] 
+	/// <summary>
+    /// <#=tbl.Comments==null ? tbl.Name:tbl.Comments #> 
+    /// </summary>
+    [Class(Table = "<#=LetterConvert.StrToLower(tbl.ClassName)#>", OptimisticLock = OptimisticLockMode.Version, DynamicUpdate = true)]
+    [Cache(Usage = CacheUsage.ReadWrite)]
+    [Serializable]
+<#}#>
+<# else{#>
+	/// <summary>
+    /// <#=tbl.Comments==null ? tbl.Name:tbl.Comments #>  
+    /// </summary>
+    [Class(Table = "<#=LetterConvert.StrToLower(tbl.ClassName)#>", OptimisticLock = OptimisticLockMode.Version, DynamicUpdate = true)]
+    [Cache(Usage = CacheUsage.ReadWrite)]
+    [Serializable]
+<# }#>
+    public class <#=LetterConvert.StrToLower(tbl.ClassName)#> : VocBasePoco 
+    {
+<# if (GenerateConstructor) { #>
+		public <#=tbl.ClassName#>()
+		{
+<# 
+foreach(var col in tbl.Columns)
+{
+	if(col.ProperPropertyType=="string"&&!col.IsNullable)
+	{
+#>
+			<#=col.PropertyName#> = "";
+<#
+	}
+	if(col.ProperPropertyType=="DateTime"&&!col.IsNullable)
+	{
+#> 
+			<#=col.PropertyName#> = new DateTime(1900,1,1);
+<#
+	}
+}#>
+		}
+
+<# }
+foreach(Column col in from c in tbl.Columns where !c.Ignore select c)
+{  
+  if (col.PropertyType == "string" && col.Size > 0) { #>
+        [StringLength(<#=col.Size#>)]
+<# }  if (col.IsAutoIncrement) { #>
+        [AutoIncrement]
+<# }  if (col.IsComputed) { #>
+        [Compute]      
+<# } if (!col.IsPK){#>
+
+		/// <summary>
+		///<#=col.Comments==null ? col.Name:tbl.Comments #>  
+		/// </summary>
+		[Property(Column = "<#=LetterConvert.StrToLower(col.PropertyName)#>")]
+        public <#=col.ProperPropertyType#> <#=LetterConvert.ConvertStr(col.PropertyName)#> { get; set;}
+<# } if (col.IsPK && UseIdAsPK) { #>
+	   <# if (ProviderNameResult=="Oracle.DataAccess.Client") { #>
+        [Id(0, TypeType = typeof(long), Name = "Id", UnsavedValue = "0")]
+        [Column(1, Name = "<#=col.PropertyName#>", NotNull = true, SqlType = "number")]
+        [Generator(2, Class = "sequence")]
+        [Param(3, Name = "sequence", Content = "sequenceName")]
+		<# } #>
+        public <#=col.ProperPropertyType#> Id { get; set;}
+<# } if (col.IsPK && !UseIdAsPK) { #>
+		[PrimaryKey]
+        public <#=col.ProperPropertyType#> <#=col.PropertyName#> { get; set;}
+<# } #>
+<# } #>
+    }
+<#  manager.EndBlock(); #>
+<#  }   #>
+<#manager.StartFooter(); #>
+} 
+<#manager.EndBlock(); #>
+<#manager.Process(SplitIntoMultipleFiles); #>
+<#  }   #>
+
+

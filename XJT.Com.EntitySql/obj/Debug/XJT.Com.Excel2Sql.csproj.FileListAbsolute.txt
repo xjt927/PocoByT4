@@ -1,0 +1,15 @@
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\StudyApplication\XJT.Com.Excel2Sql\bin\Debug\ExcelFile\01 数据库设计-工厂模型.xlsx
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\StudyApplication\XJT.Com.Excel2Sql\bin\Debug\ExcelFile\02 数据库设计-VOCs管理.xlsx
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\StudyApplication\XJT.Com.Excel2Sql\bin\Debug\Excel2Sql.exe.config
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\StudyApplication\XJT.Com.Excel2Sql\bin\Debug\Excel2Sql.exe
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\StudyApplication\XJT.Com.Excel2Sql\bin\Debug\Excel2Sql.pdb
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\StudyApplication\XJT.Com.Excel2Sql\obj\Debug\MainWindow.g.cs
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\StudyApplication\XJT.Com.Excel2Sql\obj\Debug\App.g.cs
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\StudyApplication\XJT.Com.Excel2Sql\obj\Debug\Excel2Sql_MarkupCompile.cache
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\StudyApplication\XJT.Com.Excel2Sql\obj\Debug\Excel2Sql_MarkupCompile.lref
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\StudyApplication\XJT.Com.Excel2Sql\obj\Debug\MainWindow.baml
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\StudyApplication\XJT.Com.Excel2Sql\obj\Debug\Excel2Sql.g.resources
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\StudyApplication\XJT.Com.Excel2Sql\obj\Debug\XJT.Com.Excel2Sql.Properties.Resources.resources
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\StudyApplication\XJT.Com.Excel2Sql\obj\Debug\XJT.Com.Excel2Sql.csproj.GenerateResource.Cache
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\StudyApplication\XJT.Com.Excel2Sql\obj\Debug\Excel2Sql.exe
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\StudyApplication\XJT.Com.Excel2Sql\obj\Debug\Excel2Sql.pdb
