@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OracePocoByT4", "OracePocoByT4\OracePocoByT4.csproj", "{5EA81E82-C763-493B-AC9F-46C9E136EE64}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetaPocoByT4", "PetaPocoByT4\PetaPocoByT4.csproj", "{50BEC228-B32F-40B5-889B-0C8139751896}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XJT.Com.EntitySql", "XJT.Com.EntitySql\XJT.Com.EntitySql.csproj", "{3E2EE8F7-F333-434D-BDF0-846831901AC7}"
@@ -19,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OracleConsole", "OracleCons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OracleUnit", "OracleUnit\OracleUnit.csproj", "{A466479D-8B27-42EF-B19C-A71B1F6BEBD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrmLitePocoByT4", "OrmLitePocoByT4\OrmLitePocoByT4.csproj", "{5EA81E82-C763-493B-AC9F-46C9E136EE64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,18 +29,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Debug|x64.ActiveCfg = Debug|x64
-		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Debug|x64.Build.0 = Debug|x64
-		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Debug|x86.ActiveCfg = Debug|x86
-		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Debug|x86.Build.0 = Debug|x86
-		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Release|x64.ActiveCfg = Release|x64
-		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Release|x64.Build.0 = Release|x64
-		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Release|x86.ActiveCfg = Release|x86
-		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Release|x86.Build.0 = Release|x86
 		{50BEC228-B32F-40B5-889B-0C8139751896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{50BEC228-B32F-40B5-889B-0C8139751896}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50BEC228-B32F-40B5-889B-0C8139751896}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -113,6 +101,18 @@ Global
 		{A466479D-8B27-42EF-B19C-A71B1F6BEBD4}.Release|x64.Build.0 = Release|Any CPU
 		{A466479D-8B27-42EF-B19C-A71B1F6BEBD4}.Release|x86.ActiveCfg = Release|Any CPU
 		{A466479D-8B27-42EF-B19C-A71B1F6BEBD4}.Release|x86.Build.0 = Release|Any CPU
+		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Debug|x64.ActiveCfg = Debug|x64
+		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Debug|x64.Build.0 = Debug|x64
+		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Debug|x86.ActiveCfg = Debug|x86
+		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Debug|x86.Build.0 = Debug|x86
+		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Release|x64.ActiveCfg = Release|x64
+		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Release|x64.Build.0 = Release|x64
+		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Release|x86.ActiveCfg = Release|x86
+		{5EA81E82-C763-493B-AC9F-46C9E136EE64}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

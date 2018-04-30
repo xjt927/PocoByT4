@@ -57,12 +57,6 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\OracePocoByT4\OracePocoByT4.csproj">
-      <Project>{5EA81E82-C763-493B-AC9F-46C9E136EE64}</Project>
-      <Name>OracePocoByT4</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
