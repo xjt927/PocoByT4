@@ -1,0 +1,15 @@
+d:\documents\visual studio 2013\Projects\OracePocoByT4\Oracle.DAL\bin\Debug\Oracle.DAL.dll
+d:\documents\visual studio 2013\Projects\OracePocoByT4\Oracle.DAL\bin\Debug\Oracle.DAL.pdb
+d:\documents\visual studio 2013\Projects\OracePocoByT4\Oracle.DAL\bin\Debug\Oracle.Common.dll
+d:\documents\visual studio 2013\Projects\OracePocoByT4\Oracle.DAL\bin\Debug\Oracle.Common.pdb
+d:\documents\visual studio 2013\Projects\OracePocoByT4\Oracle.DAL\obj\Debug\Oracle.DAL.dll
+d:\documents\visual studio 2013\Projects\OracePocoByT4\Oracle.DAL\obj\Debug\Oracle.DAL.pdb
+d:\documents\visual studio 2013\Projects\OracePocoByT4\Oracle.DAL\obj\Debug\Oracle.DAL.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\OracePocoByT4\Oracle.DAL\bin\Debug\Oracle.DAL.dll
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\OracePocoByT4\Oracle.DAL\bin\Debug\Oracle.DAL.pdb
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\OracePocoByT4\Oracle.DAL\bin\Debug\Oracle.Common.dll
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\OracePocoByT4\Oracle.DAL\bin\Debug\Oracle.Common.pdb
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\OracePocoByT4\Oracle.DAL\obj\Debug\Oracle.DAL.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\OracePocoByT4\Oracle.DAL\obj\Debug\Oracle.DAL.csproj.CoreCompileInputs.cache
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\OracePocoByT4\Oracle.DAL\obj\Debug\Oracle.DAL.dll
+D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\OracePocoByT4\Oracle.DAL\obj\Debug\Oracle.DAL.pdb

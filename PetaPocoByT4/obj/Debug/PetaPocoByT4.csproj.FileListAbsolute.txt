@@ -11,11 +11,3 @@ D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\OracePocoB
 D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\OracePocoByT4\PetaPocoByT4\obj\Debug\PetaPocoByT4.exe
 D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\OracePocoByT4\PetaPocoByT4\obj\Debug\PetaPocoByT4.pdb
 D:\Documents\Visual Studio 2013\Source\Bitbucket_Git\StudyNewFeatures\OracePocoByT4\PetaPocoByT4\obj\Debug\PetaPocoByT4.csproj.CoreCompileInputs.cache
-D:\Documents\Visual Studio 2013\Source\GitHub\OraclePocoByT4\PetaPocoByT4\bin\Debug\App.config
-D:\Documents\Visual Studio 2013\Source\GitHub\OraclePocoByT4\PetaPocoByT4\bin\Debug\PetaPocoByT4.exe.config
-D:\Documents\Visual Studio 2013\Source\GitHub\OraclePocoByT4\PetaPocoByT4\bin\Debug\PetaPocoByT4.exe
-D:\Documents\Visual Studio 2013\Source\GitHub\OraclePocoByT4\PetaPocoByT4\bin\Debug\PetaPocoByT4.pdb
-D:\Documents\Visual Studio 2013\Source\GitHub\OraclePocoByT4\PetaPocoByT4\obj\Debug\PetaPocoByT4.csprojResolveAssemblyReference.cache
-D:\Documents\Visual Studio 2013\Source\GitHub\OraclePocoByT4\PetaPocoByT4\obj\Debug\PetaPocoByT4.csproj.CoreCompileInputs.cache
-D:\Documents\Visual Studio 2013\Source\GitHub\OraclePocoByT4\PetaPocoByT4\obj\Debug\PetaPocoByT4.exe
-D:\Documents\Visual Studio 2013\Source\GitHub\OraclePocoByT4\PetaPocoByT4\obj\Debug\PetaPocoByT4.pdb

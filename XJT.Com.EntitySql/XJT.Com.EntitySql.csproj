@@ -157,6 +157,8 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Compile Include="DatabaseSource\GenerateCore.cs" />
+    <None Include="ExcelFile\01 数据库设计-工厂模型.xlsx" />
+    <None Include="ExcelFile\02 数据库设计-VOCs管理.xlsx" />
     <None Include="ExcelFile\03 数据库设计-报警变更管理.xlsx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
